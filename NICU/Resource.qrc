@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/">
+        <file>../resource/images/back.png</file>
+        <file>../resource/images/blood.png</file>
+        <file>../resource/images/breath.png</file>
+        <file>../resource/images/breathgif.gif</file>
+        <file>../resource/images/breathimg.png</file>
+        <file>../resource/images/danger.png</file>
+        <file>../resource/images/databack.jpg</file>
+        <file>../resource/images/heart.png</file>
+        <file>../resource/images/hospitalback.jpg</file>
+        <file>../resource/images/lock.png</file>
+        <file>../resource/images/mainbanner.png</file>
+        <file>../resource/images/pressure.png</file>
+        <file>../resource/images/progress_back.png</file>
+        <file>../resource/images/progress_front.png</file>
+        <file>../resource/images/quit.png</file>
+        <file>../resource/images/resource.qrc</file>
+        <file>../resource/images/unlock.png</file>
+    </qresource>
+</RCC>
