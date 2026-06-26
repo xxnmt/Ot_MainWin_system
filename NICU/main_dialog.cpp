@@ -47,9 +47,5 @@ void Main_Dialog::on_btn_Breath_clicked()
 }
 
 
-void Main_Dialog::on_pushButton_clicked()
-{
-    Serial_Dialog* ser=new Serial_Dialog();
-    ser->show();
-}
+
 

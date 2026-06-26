@@ -120,7 +120,7 @@ void ECGTest_Dialog::drawECGGrid(QPainter &painter, int width, int height, doubl
 
 void ECGTest_Dialog::drawHisECGWave(QPainter &painter, int width, int height, double dots)
 {
-    drawECGGrid(painter,width,height,DOTS);
+    // drawECGGrid(painter,width,height,DOTS);
     painter.save();
     float fpPerMv = 10* DOTS;
     float fpPerUv = fpPerMv/1000;

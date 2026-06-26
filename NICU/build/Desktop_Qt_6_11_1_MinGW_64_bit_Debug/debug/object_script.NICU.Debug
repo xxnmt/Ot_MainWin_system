@@ -8,4 +8,3 @@ debug/user_data.o
 debug/qrc_Resource.o
 debug/moc_ecgtest_dialog.o
 debug/moc_main_dialog.o
-debug/moc_serial_dialog.o

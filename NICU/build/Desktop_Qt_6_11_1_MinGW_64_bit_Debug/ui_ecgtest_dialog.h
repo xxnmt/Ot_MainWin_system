@@ -29,7 +29,7 @@ public:
         if (ECGTest_Dialog->objectName().isEmpty())
             ECGTest_Dialog->setObjectName("ECGTest_Dialog");
         ECGTest_Dialog->resize(669, 449);
-        ECGTest_Dialog->setStyleSheet(QString::fromUtf8(""));
+        ECGTest_Dialog->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
         btn_quit = new QPushButton(ECGTest_Dialog);
         btn_quit->setObjectName("btn_quit");
         btn_quit->setGeometry(QRect(630, 10, 25, 25));

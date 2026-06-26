@@ -14,7 +14,7 @@
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true"/>
+   <string notr="true">color: rgb(255, 255, 255);</string>
   </property>
   <widget class="QPushButton" name="btn_quit">
    <property name="geometry">

@@ -11,7 +11,6 @@ SOURCES += \
     heart_data.cpp \
     main.cpp \
     main_dialog.cpp \
-    serial_dialog.cpp \
     serial_tool.cpp \
     user_data.cpp
 
@@ -20,14 +19,12 @@ HEADERS += \
     ecgtest_dialog.h \
     heart_data.h \
     main_dialog.h \
-    serial_dialog.h \
     serial_tool.h \
     user_data.h
 
 FORMS += \
     ecgtest_dialog.ui \
-    main_dialog.ui \
-    serial_dialog.ui
+    main_dialog.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

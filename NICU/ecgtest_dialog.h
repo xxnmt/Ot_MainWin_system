@@ -16,10 +16,10 @@ class ECGTest_Dialog : public QDialog
 private:
     Ui::ECGTest_Dialog *ui;
     QJsonArray User_DataArr;
-    Heart_Data* User_ChannelData[12] = {nullptr};  // ✅ 已正确初始化
-    Serial_Tool *User_serial = nullptr;            // ✅ 初始化为 nullptr
+    Heart_Data* User_ChannelData[12];
+    Serial_Tool *User_serial;
     QList<QByteArray> User_newdata;
-    bool User_serialflag = false;                  // ✅ 初始化为 false
+    bool User_serialflag;
 
 
 public:
