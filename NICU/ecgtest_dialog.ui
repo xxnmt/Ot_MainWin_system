@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>669</width>
-    <height>449</height>
+    <width>660</width>
+    <height>450</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -35,7 +35,7 @@
   <widget class="QLabel" name="label_UserName">
    <property name="geometry">
     <rect>
-     <x>320</x>
+     <x>400</x>
      <y>10</y>
      <width>70</width>
      <height>25</height>
@@ -45,6 +45,9 @@
     <font>
      <pointsize>12</pointsize>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 0);</string>
    </property>
    <property name="text">
     <string>TextLabel</string>
@@ -53,7 +56,7 @@
   <widget class="QLabel" name="label_UserAge">
    <property name="geometry">
     <rect>
-     <x>410</x>
+     <x>540</x>
      <y>10</y>
      <width>70</width>
      <height>25</height>
@@ -63,6 +66,9 @@
     <font>
      <pointsize>12</pointsize>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 0);</string>
    </property>
    <property name="text">
     <string>TextLabel</string>

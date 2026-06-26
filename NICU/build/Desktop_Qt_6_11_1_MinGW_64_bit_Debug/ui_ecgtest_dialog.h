@@ -28,7 +28,7 @@ public:
     {
         if (ECGTest_Dialog->objectName().isEmpty())
             ECGTest_Dialog->setObjectName("ECGTest_Dialog");
-        ECGTest_Dialog->resize(669, 449);
+        ECGTest_Dialog->resize(660, 450);
         ECGTest_Dialog->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
         btn_quit = new QPushButton(ECGTest_Dialog);
         btn_quit->setObjectName("btn_quit");
@@ -36,14 +36,16 @@ public:
         btn_quit->setStyleSheet(QString::fromUtf8("border-image: url(:/resource/images/back.png);"));
         label_UserName = new QLabel(ECGTest_Dialog);
         label_UserName->setObjectName("label_UserName");
-        label_UserName->setGeometry(QRect(320, 10, 70, 25));
+        label_UserName->setGeometry(QRect(400, 10, 70, 25));
         QFont font;
         font.setPointSize(12);
         label_UserName->setFont(font);
+        label_UserName->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 0);"));
         label_UserAge = new QLabel(ECGTest_Dialog);
         label_UserAge->setObjectName("label_UserAge");
-        label_UserAge->setGeometry(QRect(410, 10, 70, 25));
+        label_UserAge->setGeometry(QRect(540, 10, 70, 25));
         label_UserAge->setFont(font);
+        label_UserAge->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 0);"));
 
         retranslateUi(ECGTest_Dialog);
 

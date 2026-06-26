@@ -3,45 +3,49 @@
 
 #include <QDialog>
 #include <QJsonArray>
-#include "heart_data.h"
+#include <QList>
+#include <QTimer>
 #include "serial_tool.h"
+#include "heart_data.h"
 
-namespace Ui {
-class ECGTest_Dialog;
-}
+QT_BEGIN_NAMESPACE
+namespace Ui { class ECGTest_Dialog; }
+QT_END_NAMESPACE
 
 class ECGTest_Dialog : public QDialog
 {
     Q_OBJECT
-private:
-    Ui::ECGTest_Dialog *ui;
-    QJsonArray User_DataArr;
-    Heart_Data* User_ChannelData[12];
-    Serial_Tool *User_serial;
-    QList<QByteArray> User_newdata;
-    bool User_serialflag;
-
 
 public:
     explicit ECGTest_Dialog(QWidget *parent = nullptr);
     ~ECGTest_Dialog();
 
-    void readECGFile(QString FileName);
-    void getHistoryData();
-    void drawECGGrid(QPainter &painter,int width,int height,double dots);
-    void drawHisECGWave(QPainter &painter,int width,int height,double dots);
-    bool serialPortInit();
-    void updateECGWave(QPainter &painter,int width,int height,double dots);
+protected:
+    void paintEvent(QPaintEvent *event) override;
 
 private slots:
-    void on_btn_quit_clicked();
     void receiveData();
+    void on_btn_quit_clicked();
+    void updateWaveform();  // 定时刷新
 
+private:
+    void readECGFile(QString FileName);
+    void getHistoryData();
+    void drawECGGrid(QPainter &painter, int width, int height, double dots);
+    void drawHisECGWave(QPainter &painter, int width, int height, double dots);
+    void drawRealTimeWave(QPainter &painter, int width, int height, double dots);
+    void drawInterfaceInfo(QPainter &painter);
+    bool serialPortInit();
+    void parseSerialData(const QByteArray &data);
 
-
-    // QWidget interface
-protected:
-    void paintEvent(QPaintEvent *event);
+private:
+    Ui::ECGTest_Dialog *ui;
+    Serial_Tool *User_serial;
+    Heart_Data *User_ChannelData[12];
+    QJsonArray User_DataArr;
+    QList<int> User_newdata;
+    bool User_serialflag;
+    QTimer *m_updateTimer;
 };
 
 #endif // ECGTEST_DIALOG_H

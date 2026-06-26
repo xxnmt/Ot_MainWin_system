@@ -34,8 +34,20 @@ void Heart_Data::setDataArr(QJsonArray dataArr)
     }
 }
 
-void Heart_Data::addData(int data)
+// heart_data.cpp
+void Heart_Data::addData(int value)
 {
-    if(User_DataArr.size()>=MAX_DATA)User_DataArr.pop_front();
-    User_DataArr.append(data);
+    QJsonArray newArr = User_DataArr;
+    newArr.append(value);
+
+    // 限制数据量，防止内存溢出（保留最新2000个点）
+    if (newArr.size() > MAX_DATA) {
+        QJsonArray trimmed;
+        for (int i = newArr.size() - MAX_DATA; i < newArr.size(); i++) {
+            trimmed.append(newArr[i]);
+        }
+        newArr = trimmed;
+    }
+
+    User_DataArr = newArr;
 }

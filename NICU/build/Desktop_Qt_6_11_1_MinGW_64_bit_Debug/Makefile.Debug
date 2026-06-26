@@ -366,8 +366,8 @@ debug/moc_ecgtest_dialog.cpp: ../../ecgtest_dialog.h \
 		D:/QT/6.11.1/mingw_64/include/QtCore/quuid.h \
 		D:/QT/6.11.1/mingw_64/include/QtCore/qjsondocument.h \
 		D:/QT/6.11.1/mingw_64/include/QtCore/qjsonparseerror.h \
-		../../heart_data.h \
-		D:/QT/6.11.1/mingw_64/include/QtCore/QString \
+		D:/QT/6.11.1/mingw_64/include/QtCore/QTimer \
+		D:/QT/6.11.1/mingw_64/include/QtCore/qtimer.h \
 		../../serial_tool.h \
 		D:/QT/6.11.1/mingw_64/include/QtSerialPort/QSerialPort \
 		D:/QT/6.11.1/mingw_64/include/QtSerialPort/qserialport.h \
@@ -377,6 +377,8 @@ debug/moc_ecgtest_dialog.cpp: ../../ecgtest_dialog.h \
 		D:/QT/6.11.1/mingw_64/include/QtSerialPort/qtserialportexports.h \
 		D:/QT/6.11.1/mingw_64/include/QtSerialPort/QSerialPortInfo \
 		D:/QT/6.11.1/mingw_64/include/QtSerialPort/qserialportinfo.h \
+		../../heart_data.h \
+		D:/QT/6.11.1/mingw_64/include/QtCore/QString \
 		debug/moc_predefs.h \
 		D:/QT/6.11.1/mingw_64/bin/moc.exe
 	D:\QT\6.11.1\mingw_64\bin\moc.exe $(DEFINES) --include D:/QtProject/Ot_MainWin_system/NICU/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/debug/moc_predefs.h -ID:/QT/6.11.1/mingw_64/mkspecs/win32-g++ -ID:/QtProject/Ot_MainWin_system/NICU -ID:/QT/6.11.1/mingw_64/include -ID:/QT/6.11.1/mingw_64/include/QtWidgets -ID:/QT/6.11.1/mingw_64/include/QtGui -ID:/QT/6.11.1/mingw_64/include/QtSerialPort -ID:/QT/6.11.1/mingw_64/include/QtCore -I. -ID:/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -ID:/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -ID:/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -ID:/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -ID:/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -ID:/QT/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\ecgtest_dialog.h -o debug\moc_ecgtest_dialog.cpp
@@ -595,8 +597,8 @@ debug/moc_main_dialog.cpp: ../../main_dialog.h \
 		D:/QT/6.11.1/mingw_64/include/QtCore/quuid.h \
 		D:/QT/6.11.1/mingw_64/include/QtCore/qjsondocument.h \
 		D:/QT/6.11.1/mingw_64/include/QtCore/qjsonparseerror.h \
-		../../heart_data.h \
-		D:/QT/6.11.1/mingw_64/include/QtCore/QString \
+		D:/QT/6.11.1/mingw_64/include/QtCore/QTimer \
+		D:/QT/6.11.1/mingw_64/include/QtCore/qtimer.h \
 		../../serial_tool.h \
 		D:/QT/6.11.1/mingw_64/include/QtSerialPort/QSerialPort \
 		D:/QT/6.11.1/mingw_64/include/QtSerialPort/qserialport.h \
@@ -606,6 +608,8 @@ debug/moc_main_dialog.cpp: ../../main_dialog.h \
 		D:/QT/6.11.1/mingw_64/include/QtSerialPort/qtserialportexports.h \
 		D:/QT/6.11.1/mingw_64/include/QtSerialPort/QSerialPortInfo \
 		D:/QT/6.11.1/mingw_64/include/QtSerialPort/qserialportinfo.h \
+		../../heart_data.h \
+		D:/QT/6.11.1/mingw_64/include/QtCore/QString \
 		debug/moc_predefs.h \
 		D:/QT/6.11.1/mingw_64/bin/moc.exe
 	D:\QT\6.11.1\mingw_64\bin\moc.exe $(DEFINES) --include D:/QtProject/Ot_MainWin_system/NICU/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/debug/moc_predefs.h -ID:/QT/6.11.1/mingw_64/mkspecs/win32-g++ -ID:/QtProject/Ot_MainWin_system/NICU -ID:/QT/6.11.1/mingw_64/include -ID:/QT/6.11.1/mingw_64/include/QtWidgets -ID:/QT/6.11.1/mingw_64/include/QtGui -ID:/QT/6.11.1/mingw_64/include/QtSerialPort -ID:/QT/6.11.1/mingw_64/include/QtCore -I. -ID:/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -ID:/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -ID:/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -ID:/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -ID:/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -ID:/QT/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\main_dialog.h -o debug\moc_main_dialog.cpp
@@ -637,10 +641,11 @@ compiler_clean: compiler_rcc_clean compiler_moc_predefs_clean compiler_moc_heade
 
 ####### Compile
 
-debug/ecgtest_dialog.o: ../../ecgtest_dialog.cpp D:/QT/6.11.1/mingw_64/include/QtCore/QFile \
-		D:/QT/6.11.1/mingw_64/include/QtCore/qfile.h \
-		D:/QT/6.11.1/mingw_64/include/QtCore/qfiledevice.h \
-		D:/QT/6.11.1/mingw_64/include/QtCore/qiodevice.h \
+debug/ecgtest_dialog.o: ../../ecgtest_dialog.cpp ../../ecgtest_dialog.h \
+		D:/QT/6.11.1/mingw_64/include/QtWidgets/QDialog \
+		D:/QT/6.11.1/mingw_64/include/QtWidgets/qdialog.h \
+		D:/QT/6.11.1/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
+		D:/QT/6.11.1/mingw_64/include/QtGui/qtguiglobal.h \
 		D:/QT/6.11.1/mingw_64/include/QtCore/qglobal.h \
 		D:/QT/6.11.1/mingw_64/include/QtCore/qtcoreglobal.h \
 		D:/QT/6.11.1/mingw_64/include/QtCore/qtversionchecks.h \
@@ -688,8 +693,12 @@ debug/ecgtest_dialog.o: ../../ecgtest_dialog.cpp D:/QT/6.11.1/mingw_64/include/Q
 		D:/QT/6.11.1/mingw_64/include/QtCore/qtresource.h \
 		D:/QT/6.11.1/mingw_64/include/QtCore/qttranslation.h \
 		D:/QT/6.11.1/mingw_64/include/QtCore/qversiontagging.h \
-		D:/QT/6.11.1/mingw_64/include/QtCore/qiodevicebase.h \
-		D:/QT/6.11.1/mingw_64/include/QtCore/qobject.h \
+		D:/QT/6.11.1/mingw_64/include/QtGui/qtgui-config.h \
+		D:/QT/6.11.1/mingw_64/include/QtGui/qtguiexports.h \
+		D:/QT/6.11.1/mingw_64/include/QtWidgets/qtwidgets-config.h \
+		D:/QT/6.11.1/mingw_64/include/QtWidgets/qtwidgetsexports.h \
+		D:/QT/6.11.1/mingw_64/include/QtWidgets/qwidget.h \
+		D:/QT/6.11.1/mingw_64/include/QtGui/qwindowdefs.h \
 		D:/QT/6.11.1/mingw_64/include/QtCore/qobjectdefs.h \
 		D:/QT/6.11.1/mingw_64/include/QtCore/qnamespace.h \
 		D:/QT/6.11.1/mingw_64/include/QtCore/qcompare.h \
@@ -698,6 +707,8 @@ debug/ecgtest_dialog.o: ../../ecgtest_dialog.cpp D:/QT/6.11.1/mingw_64/include/Q
 		D:/QT/6.11.1/mingw_64/include/QtCore/qtmetamacros.h \
 		D:/QT/6.11.1/mingw_64/include/QtCore/qobjectdefs_impl.h \
 		D:/QT/6.11.1/mingw_64/include/QtCore/qfunctionaltools_impl.h \
+		D:/QT/6.11.1/mingw_64/include/QtGui/qwindowdefs_win.h \
+		D:/QT/6.11.1/mingw_64/include/QtCore/qobject.h \
 		D:/QT/6.11.1/mingw_64/include/QtCore/qstring.h \
 		D:/QT/6.11.1/mingw_64/include/QtCore/qchar.h \
 		D:/QT/6.11.1/mingw_64/include/QtCore/qstringview.h \
@@ -740,6 +751,7 @@ debug/ecgtest_dialog.o: ../../ecgtest_dialog.cpp D:/QT/6.11.1/mingw_64/include/Q
 		D:/QT/6.11.1/mingw_64/include/QtCore/qdeadlinetimer.h \
 		D:/QT/6.11.1/mingw_64/include/QtCore/qmetatype.h \
 		D:/QT/6.11.1/mingw_64/include/QtCore/qdatastream.h \
+		D:/QT/6.11.1/mingw_64/include/QtCore/qiodevicebase.h \
 		D:/QT/6.11.1/mingw_64/include/QtCore/qscopedpointer.h \
 		D:/QT/6.11.1/mingw_64/include/QtCore/qfloat16.h \
 		D:/QT/6.11.1/mingw_64/include/QtCore/qmath.h \
@@ -751,14 +763,35 @@ debug/ecgtest_dialog.o: ../../ecgtest_dialog.cpp D:/QT/6.11.1/mingw_64/include/Q
 		D:/QT/6.11.1/mingw_64/include/QtCore/qscopeguard.h \
 		D:/QT/6.11.1/mingw_64/include/QtCore/qobject_impl.h \
 		D:/QT/6.11.1/mingw_64/include/QtCore/qbindingstorage.h \
+		D:/QT/6.11.1/mingw_64/include/QtCore/qmargins.h \
+		D:/QT/6.11.1/mingw_64/include/QtCore/qcheckedint_impl.h \
+		D:/QT/6.11.1/mingw_64/include/QtCore/q23utility.h \
+		D:/QT/6.11.1/mingw_64/include/QtCore/q20utility.h \
+		D:/QT/6.11.1/mingw_64/include/QtGui/qaction.h \
+		D:/QT/6.11.1/mingw_64/include/QtGui/qkeysequence.h \
+		D:/QT/6.11.1/mingw_64/include/QtGui/qicon.h \
+		D:/QT/6.11.1/mingw_64/include/QtCore/qsize.h \
+		D:/QT/6.11.1/mingw_64/include/QtGui/qpixmap.h \
+		D:/QT/6.11.1/mingw_64/include/QtGui/qpaintdevice.h \
+		D:/QT/6.11.1/mingw_64/include/QtCore/qrect.h \
+		D:/QT/6.11.1/mingw_64/include/QtCore/qpoint.h \
+		D:/QT/6.11.1/mingw_64/include/QtGui/qcolor.h \
+		D:/QT/6.11.1/mingw_64/include/QtGui/qrgb.h \
+		D:/QT/6.11.1/mingw_64/include/QtGui/qrgba64.h \
+		D:/QT/6.11.1/mingw_64/include/QtCore/qshareddata.h \
+		D:/QT/6.11.1/mingw_64/include/QtGui/qimage.h \
+		D:/QT/6.11.1/mingw_64/include/QtGui/qpixelformat.h \
+		D:/QT/6.11.1/mingw_64/include/QtGui/qtransform.h \
+		D:/QT/6.11.1/mingw_64/include/QtGui/qpolygon.h \
+		D:/QT/6.11.1/mingw_64/include/QtGui/qregion.h \
 		D:/QT/6.11.1/mingw_64/include/QtCore/qspan.h \
 		D:/QT/6.11.1/mingw_64/include/QtCore/q20iterator.h \
-		D:/QT/6.11.1/mingw_64/include/QtCore/QDebug \
+		D:/QT/6.11.1/mingw_64/include/QtCore/qline.h \
+		D:/QT/6.11.1/mingw_64/include/QtCore/qvariant.h \
 		D:/QT/6.11.1/mingw_64/include/QtCore/qdebug.h \
 		D:/QT/6.11.1/mingw_64/include/QtCore/qtextstream.h \
 		D:/QT/6.11.1/mingw_64/include/QtCore/qcontiguouscache.h \
 		D:/QT/6.11.1/mingw_64/include/QtCore/qsharedpointer.h \
-		D:/QT/6.11.1/mingw_64/include/QtCore/qshareddata.h \
 		D:/QT/6.11.1/mingw_64/include/QtCore/qsharedpointer_impl.h \
 		D:/QT/6.11.1/mingw_64/include/QtCore/qmap.h \
 		D:/QT/6.11.1/mingw_64/include/QtCore/qshareddata_impl.h \
@@ -766,72 +799,19 @@ debug/ecgtest_dialog.o: ../../ecgtest_dialog.cpp D:/QT/6.11.1/mingw_64/include/Q
 		D:/QT/6.11.1/mingw_64/include/QtCore/qhash.h \
 		D:/QT/6.11.1/mingw_64/include/QtCore/qvarlengtharray.h \
 		D:/QT/6.11.1/mingw_64/include/QtCore/qalloc.h \
-		D:/QT/6.11.1/mingw_64/include/QtCore/QJsonDocument \
-		D:/QT/6.11.1/mingw_64/include/QtCore/qjsondocument.h \
-		D:/QT/6.11.1/mingw_64/include/QtCore/qjsonparseerror.h \
-		D:/QT/6.11.1/mingw_64/include/QtCore/qjsonvalue.h \
-		D:/QT/6.11.1/mingw_64/include/QtCore/qcborvalue.h \
-		D:/QT/6.11.1/mingw_64/include/QtCore/qcborcommon.h \
-		D:/QT/6.11.1/mingw_64/include/QtCore/qdatetime.h \
-		D:/QT/6.11.1/mingw_64/include/QtCore/qcalendar.h \
-		D:/QT/6.11.1/mingw_64/include/QtCore/qlocale.h \
-		D:/QT/6.11.1/mingw_64/include/QtCore/qvariant.h \
-		D:/QT/6.11.1/mingw_64/include/QtCore/q23utility.h \
-		D:/QT/6.11.1/mingw_64/include/QtCore/q20utility.h \
-		D:/QT/6.11.1/mingw_64/include/QtCore/qregularexpression.h \
-		D:/QT/6.11.1/mingw_64/include/QtCore/qurl.h \
-		D:/QT/6.11.1/mingw_64/include/QtCore/quuid.h \
-		D:/QT/6.11.1/mingw_64/include/QtCore/qendian.h \
-		D:/QT/6.11.1/mingw_64/include/QtCore/QJsonObject \
-		D:/QT/6.11.1/mingw_64/include/QtCore/qjsonobject.h \
-		D:/QT/6.11.1/mingw_64/include/QtGui/QPainter \
-		D:/QT/6.11.1/mingw_64/include/QtGui/qpainter.h \
-		D:/QT/6.11.1/mingw_64/include/QtGui/qtguiglobal.h \
-		D:/QT/6.11.1/mingw_64/include/QtGui/qtgui-config.h \
-		D:/QT/6.11.1/mingw_64/include/QtGui/qtguiexports.h \
-		D:/QT/6.11.1/mingw_64/include/QtCore/qrect.h \
-		D:/QT/6.11.1/mingw_64/include/QtCore/qcheckedint_impl.h \
-		D:/QT/6.11.1/mingw_64/include/QtCore/qmargins.h \
-		D:/QT/6.11.1/mingw_64/include/QtCore/qsize.h \
-		D:/QT/6.11.1/mingw_64/include/QtCore/qpoint.h \
-		D:/QT/6.11.1/mingw_64/include/QtGui/qpixmap.h \
-		D:/QT/6.11.1/mingw_64/include/QtGui/qpaintdevice.h \
-		D:/QT/6.11.1/mingw_64/include/QtGui/qwindowdefs.h \
-		D:/QT/6.11.1/mingw_64/include/QtGui/qwindowdefs_win.h \
-		D:/QT/6.11.1/mingw_64/include/QtGui/qcolor.h \
-		D:/QT/6.11.1/mingw_64/include/QtGui/qrgb.h \
-		D:/QT/6.11.1/mingw_64/include/QtGui/qrgba64.h \
-		D:/QT/6.11.1/mingw_64/include/QtGui/qimage.h \
-		D:/QT/6.11.1/mingw_64/include/QtGui/qpixelformat.h \
-		D:/QT/6.11.1/mingw_64/include/QtGui/qtransform.h \
-		D:/QT/6.11.1/mingw_64/include/QtGui/qpolygon.h \
-		D:/QT/6.11.1/mingw_64/include/QtGui/qregion.h \
-		D:/QT/6.11.1/mingw_64/include/QtCore/qline.h \
-		D:/QT/6.11.1/mingw_64/include/QtGui/qtextoption.h \
-		D:/QT/6.11.1/mingw_64/include/QtGui/qpen.h \
-		D:/QT/6.11.1/mingw_64/include/QtGui/qbrush.h \
-		D:/QT/6.11.1/mingw_64/include/QtGui/qfontinfo.h \
-		D:/QT/6.11.1/mingw_64/include/QtGui/qfont.h \
-		D:/QT/6.11.1/mingw_64/include/QtGui/qfontvariableaxis.h \
-		D:/QT/6.11.1/mingw_64/include/QtGui/qfontmetrics.h \
-		D:/QT/6.11.1/mingw_64/include/QtCore/QVector \
-		D:/QT/6.11.1/mingw_64/include/QtCore/qvector.h \
-		D:/QT/6.11.1/mingw_64/include/QtGui/QFont \
-		../../ecgtest_dialog.h \
-		D:/QT/6.11.1/mingw_64/include/QtWidgets/QDialog \
-		D:/QT/6.11.1/mingw_64/include/QtWidgets/qdialog.h \
-		D:/QT/6.11.1/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
-		D:/QT/6.11.1/mingw_64/include/QtWidgets/qtwidgets-config.h \
-		D:/QT/6.11.1/mingw_64/include/QtWidgets/qtwidgetsexports.h \
-		D:/QT/6.11.1/mingw_64/include/QtWidgets/qwidget.h \
-		D:/QT/6.11.1/mingw_64/include/QtGui/qaction.h \
-		D:/QT/6.11.1/mingw_64/include/QtGui/qkeysequence.h \
-		D:/QT/6.11.1/mingw_64/include/QtGui/qicon.h \
 		D:/QT/6.11.1/mingw_64/include/QtGui/qpalette.h \
+		D:/QT/6.11.1/mingw_64/include/QtGui/qbrush.h \
+		D:/QT/6.11.1/mingw_64/include/QtGui/qfont.h \
+		D:/QT/6.11.1/mingw_64/include/QtCore/qendian.h \
+		D:/QT/6.11.1/mingw_64/include/QtGui/qfontmetrics.h \
+		D:/QT/6.11.1/mingw_64/include/QtGui/qfontinfo.h \
+		D:/QT/6.11.1/mingw_64/include/QtGui/qfontvariableaxis.h \
 		D:/QT/6.11.1/mingw_64/include/QtWidgets/qsizepolicy.h \
 		D:/QT/6.11.1/mingw_64/include/QtGui/qcursor.h \
 		D:/QT/6.11.1/mingw_64/include/QtGui/qbitmap.h \
 		D:/QT/6.11.1/mingw_64/include/QtGui/qevent.h \
+		D:/QT/6.11.1/mingw_64/include/QtCore/qiodevice.h \
+		D:/QT/6.11.1/mingw_64/include/QtCore/qurl.h \
 		D:/QT/6.11.1/mingw_64/include/QtGui/qeventpoint.h \
 		D:/QT/6.11.1/mingw_64/include/QtGui/qvector2d.h \
 		D:/QT/6.11.1/mingw_64/include/QtGui/qvectornd.h \
@@ -861,11 +841,21 @@ debug/ecgtest_dialog.o: ../../ecgtest_dialog.cpp D:/QT/6.11.1/mingw_64/include/Q
 		D:/QT/6.11.1/mingw_64/include/QtCore/qexception.h \
 		D:/QT/6.11.1/mingw_64/include/QtCore/qpromise.h \
 		D:/QT/6.11.1/mingw_64/include/QtGui/qinputmethod.h \
+		D:/QT/6.11.1/mingw_64/include/QtCore/qlocale.h \
 		D:/QT/6.11.1/mingw_64/include/QtGui/qguiapplication_platform.h \
 		D:/QT/6.11.1/mingw_64/include/QtCore/QJsonArray \
 		D:/QT/6.11.1/mingw_64/include/QtCore/qjsonarray.h \
-		../../heart_data.h \
-		D:/QT/6.11.1/mingw_64/include/QtCore/QString \
+		D:/QT/6.11.1/mingw_64/include/QtCore/qjsonvalue.h \
+		D:/QT/6.11.1/mingw_64/include/QtCore/qcborvalue.h \
+		D:/QT/6.11.1/mingw_64/include/QtCore/qcborcommon.h \
+		D:/QT/6.11.1/mingw_64/include/QtCore/qdatetime.h \
+		D:/QT/6.11.1/mingw_64/include/QtCore/qcalendar.h \
+		D:/QT/6.11.1/mingw_64/include/QtCore/qregularexpression.h \
+		D:/QT/6.11.1/mingw_64/include/QtCore/quuid.h \
+		D:/QT/6.11.1/mingw_64/include/QtCore/qjsondocument.h \
+		D:/QT/6.11.1/mingw_64/include/QtCore/qjsonparseerror.h \
+		D:/QT/6.11.1/mingw_64/include/QtCore/QTimer \
+		D:/QT/6.11.1/mingw_64/include/QtCore/qtimer.h \
 		../../serial_tool.h \
 		D:/QT/6.11.1/mingw_64/include/QtSerialPort/QSerialPort \
 		D:/QT/6.11.1/mingw_64/include/QtSerialPort/qserialport.h \
@@ -875,8 +865,22 @@ debug/ecgtest_dialog.o: ../../ecgtest_dialog.cpp D:/QT/6.11.1/mingw_64/include/Q
 		D:/QT/6.11.1/mingw_64/include/QtSerialPort/qtserialportexports.h \
 		D:/QT/6.11.1/mingw_64/include/QtSerialPort/QSerialPortInfo \
 		D:/QT/6.11.1/mingw_64/include/QtSerialPort/qserialportinfo.h \
+		../../heart_data.h \
+		D:/QT/6.11.1/mingw_64/include/QtCore/QString \
 		ui_ecgtest_dialog.h \
-		../../user_data.h
+		../../user_data.h \
+		D:/QT/6.11.1/mingw_64/include/QtCore/QFile \
+		D:/QT/6.11.1/mingw_64/include/QtCore/qfile.h \
+		D:/QT/6.11.1/mingw_64/include/QtCore/qfiledevice.h \
+		D:/QT/6.11.1/mingw_64/include/QtCore/QDebug \
+		D:/QT/6.11.1/mingw_64/include/QtCore/QJsonDocument \
+		D:/QT/6.11.1/mingw_64/include/QtCore/QJsonObject \
+		D:/QT/6.11.1/mingw_64/include/QtCore/qjsonobject.h \
+		D:/QT/6.11.1/mingw_64/include/QtGui/QPainter \
+		D:/QT/6.11.1/mingw_64/include/QtGui/qpainter.h \
+		D:/QT/6.11.1/mingw_64/include/QtGui/qtextoption.h \
+		D:/QT/6.11.1/mingw_64/include/QtGui/qpen.h \
+		D:/QT/6.11.1/mingw_64/include/QtGui/QFont
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\ecgtest_dialog.o ..\..\ecgtest_dialog.cpp
 
 debug/heart_data.o: ../../heart_data.cpp ../../heart_data.h \
@@ -1236,8 +1240,8 @@ debug/main.o: ../../main.cpp ../../main_dialog.h \
 		D:/QT/6.11.1/mingw_64/include/QtCore/quuid.h \
 		D:/QT/6.11.1/mingw_64/include/QtCore/qjsondocument.h \
 		D:/QT/6.11.1/mingw_64/include/QtCore/qjsonparseerror.h \
-		../../heart_data.h \
-		D:/QT/6.11.1/mingw_64/include/QtCore/QString \
+		D:/QT/6.11.1/mingw_64/include/QtCore/QTimer \
+		D:/QT/6.11.1/mingw_64/include/QtCore/qtimer.h \
 		../../serial_tool.h \
 		D:/QT/6.11.1/mingw_64/include/QtSerialPort/QSerialPort \
 		D:/QT/6.11.1/mingw_64/include/QtSerialPort/qserialport.h \
@@ -1247,6 +1251,8 @@ debug/main.o: ../../main.cpp ../../main_dialog.h \
 		D:/QT/6.11.1/mingw_64/include/QtSerialPort/qtserialportexports.h \
 		D:/QT/6.11.1/mingw_64/include/QtSerialPort/QSerialPortInfo \
 		D:/QT/6.11.1/mingw_64/include/QtSerialPort/qserialportinfo.h \
+		../../heart_data.h \
+		D:/QT/6.11.1/mingw_64/include/QtCore/QString \
 		D:/QT/6.11.1/mingw_64/include/QtWidgets/QApplication \
 		D:/QT/6.11.1/mingw_64/include/QtWidgets/qapplication.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\main.o ..\..\main.cpp
@@ -1465,8 +1471,8 @@ debug/main_dialog.o: ../../main_dialog.cpp ../../main_dialog.h \
 		D:/QT/6.11.1/mingw_64/include/QtCore/quuid.h \
 		D:/QT/6.11.1/mingw_64/include/QtCore/qjsondocument.h \
 		D:/QT/6.11.1/mingw_64/include/QtCore/qjsonparseerror.h \
-		../../heart_data.h \
-		D:/QT/6.11.1/mingw_64/include/QtCore/QString \
+		D:/QT/6.11.1/mingw_64/include/QtCore/QTimer \
+		D:/QT/6.11.1/mingw_64/include/QtCore/qtimer.h \
 		../../serial_tool.h \
 		D:/QT/6.11.1/mingw_64/include/QtSerialPort/QSerialPort \
 		D:/QT/6.11.1/mingw_64/include/QtSerialPort/qserialport.h \
@@ -1476,6 +1482,8 @@ debug/main_dialog.o: ../../main_dialog.cpp ../../main_dialog.h \
 		D:/QT/6.11.1/mingw_64/include/QtSerialPort/qtserialportexports.h \
 		D:/QT/6.11.1/mingw_64/include/QtSerialPort/QSerialPortInfo \
 		D:/QT/6.11.1/mingw_64/include/QtSerialPort/qserialportinfo.h \
+		../../heart_data.h \
+		D:/QT/6.11.1/mingw_64/include/QtCore/QString \
 		ui_main_dialog.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\main_dialog.o ..\..\main_dialog.cpp
 
