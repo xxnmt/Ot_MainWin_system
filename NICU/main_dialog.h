@@ -3,7 +3,7 @@
 #include "ecgtest_dialog.h"
 #include "hemodialysis_dialog.h"
 #include "bloodpressure_dialog.h"
-// #include "ventilator_dialog.h"
+#include "ventilator_dialog.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {

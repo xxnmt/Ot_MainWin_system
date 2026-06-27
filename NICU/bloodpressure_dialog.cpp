@@ -23,6 +23,8 @@ BloodPressure_Dialog::BloodPressure_Dialog(QWidget *parent)
 
 BloodPressure_Dialog::~BloodPressure_Dialog()
 {
+    m_bloodPressure->m_serial->serialClose();
+    delete m_bloodPressure->m_serial;
     delete ui;
 }
 

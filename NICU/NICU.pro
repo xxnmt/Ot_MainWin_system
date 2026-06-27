@@ -7,6 +7,7 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    alarm_light.cpp \
     bloodpressure.cpp \
     bloodpressure_dialog.cpp \
     ecgtest_dialog.cpp \
@@ -19,10 +20,12 @@ SOURCES += \
     progressbar_round.cpp \
     progressbar_splash.cpp \
     serial_tool.cpp \
-    user_data.cpp
+    user_data.cpp \
+    ventilator_dialog.cpp
 
 HEADERS += \
     All_Header.h \
+    alarm_light.h \
     bloodpressure.h \
     bloodpressure_dialog.h \
     ecgtest_dialog.h \
@@ -34,13 +37,15 @@ HEADERS += \
     progressbar_round.h \
     progressbar_splash.h \
     serial_tool.h \
-    user_data.h
+    user_data.h \
+    ventilator_dialog.h
 
 FORMS += \
     bloodpressure_dialog.ui \
     ecgtest_dialog.ui \
     hemodialysis_dialog.ui \
-    main_dialog.ui
+    main_dialog.ui \
+    ventilator_dialog.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

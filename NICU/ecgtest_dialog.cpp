@@ -58,11 +58,7 @@ ECGTest_Dialog::ECGTest_Dialog(QWidget *parent)
 
 ECGTest_Dialog::~ECGTest_Dialog()
 {
-    if (User_serial) {
-        User_serial->serialClose();
-        delete User_serial;
-    }
-
+    User_serial->serialClose();
     for (int i = 0; i < 12; i++) {
         if (User_ChannelData[i]) {
             delete User_ChannelData[i];

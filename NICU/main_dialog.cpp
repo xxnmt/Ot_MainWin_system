@@ -54,8 +54,8 @@ void Main_Dialog::on_btn_Quit_clicked()
 
 void Main_Dialog::on_btn_Breath_clicked()
 {
-    // Ventilator_Dialog *vDialog = new Ventilator_Dialog();
-    // vDialog->show();
+    Ventilator_Dialog *vDialog = new Ventilator_Dialog();
+    vDialog->show();
 }
 
 

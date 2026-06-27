@@ -34,6 +34,7 @@ Hemodialysis_Dialog::Hemodialysis_Dialog(QWidget *parent) :
 
 Hemodialysis_Dialog::~Hemodialysis_Dialog()
 {
+
     delete ui;
 }
 
